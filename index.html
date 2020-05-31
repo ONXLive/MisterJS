@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mr. JavaScript</title>
+    <style>
+        .greet {
+            padding: 5px;
+            text-align: center;
+        }
+        
+        body {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+<h1>Hi! I'm Mr. JavaScript!</h1>
+<a class="reset" href="#">Hi there!</a><a class="greet" href="#">How are you?</a>
+<script>
+
+    var h1 = document.querySelector("h1");
+
+    var greet = document.querySelector(".greet");
+    greet.addEventListener('click',function () {
+        h1.innerHTML = "Ok, I guess.";
+    });
+
+    var reset = document.querySelector(".reset");
+    reset.addEventListener('click',function () {
+        h1.innerHTML = "Hi! I'm Mr. JavaScript!";
+    });
+
+</script>
+</body>
+</html>
